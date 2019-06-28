@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SKFilterCell" customModule="SKSideFilterView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ci-Zq-zSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-mH-l6y">
+                                <rect key="frame" x="135" y="0.0" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="CQF-KE-9ta"/>
+                                    <constraint firstAttribute="width" secondItem="3k4-mH-l6y" secondAttribute="height" multiplier="1:1" id="fKT-yT-vDL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="jte-Ff-AwQ"/>
+                                    <constraint firstAttribute="width" constant="15" id="kjo-J1-wgM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3k4-mH-l6y" firstAttribute="top" secondItem="3ci-Zq-zSZ" secondAttribute="top" id="3Mi-EK-6j5"/>
+                            <constraint firstItem="3k4-mH-l6y" firstAttribute="top" secondItem="3ci-Zq-zSZ" secondAttribute="top" id="oBe-H4-zeL"/>
+                            <constraint firstAttribute="trailing" secondItem="3k4-mH-l6y" secondAttribute="trailing" id="pQ1-zX-U2F"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="货到付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0r-lE-TFB">
+                        <rect key="frame" x="48.5" y="42" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3ci-Zq-zSZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GhT-ck-qrx"/>
+                <constraint firstItem="q0r-lE-TFB" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="OaB-By-gei"/>
+                <constraint firstAttribute="bottom" secondItem="3ci-Zq-zSZ" secondAttribute="bottom" id="gzD-F0-LSa"/>
+                <constraint firstItem="3ci-Zq-zSZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m45-Ua-u7u"/>
+                <constraint firstItem="q0r-lE-TFB" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mGX-jq-38O"/>
+                <constraint firstAttribute="trailing" secondItem="3ci-Zq-zSZ" secondAttribute="trailing" id="nPw-Er-16g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="selectedImgView" destination="3k4-mH-l6y" id="BCP-Me-lrH"/>
+                <outlet property="titleLbl" destination="q0r-lE-TFB" id="wZD-Oy-iPf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="选择" width="15" height="15"/>
+    </resources>
+</document>
